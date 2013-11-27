@@ -5,8 +5,8 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="8"
-        android:targetSdkVersion="18" />
+        android:minSdkVersion="11"
+        android:targetSdkVersion="22" />
 
     <application
         android:allowBackup="true"
@@ -32,7 +32,8 @@
         </activity>
         <activity
             android:name="com.mpci.p2pchat.HomeActivity"
-            android:label="@string/title_activity_main" >
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme">
         </activity>
     </application>
 

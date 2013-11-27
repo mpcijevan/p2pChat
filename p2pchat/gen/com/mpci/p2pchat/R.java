@@ -28,8 +28,7 @@ public final class R {
         public static final int tab_bg_selected=0x7f020004;
         public static final int tab_bg_selector=0x7f020005;
         public static final int tab_bg_unselected=0x7f020006;
-        public static final int tab_devider=0x7f020007;
-        public static final int tab_text_selector=0x7f020008;
+        public static final int tab_text_selector=0x7f020007;
     }
     public static final class id {
         public static final int action_settings=0x7f08000c;

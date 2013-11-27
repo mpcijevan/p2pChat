@@ -33,7 +33,7 @@ public class HomeActivity extends Activity {
 		setContentView(R.layout.activity_home);
 
 		setupTabHost();
-		mTabHost.getTabWidget().setDividerDrawable(R.drawable.tab_devider);
+		mTabHost.getTabWidget();
 
 		setupTab(new TextView(this), getResources().getString(R.string.tab_online));
 		setupTab(new TextView(this), getResources().getString(R.string.tab_friends));
@@ -45,10 +45,12 @@ public class HomeActivity extends Activity {
 	private void setupTab(final View view, final String tag) {
 		View tabview = createTabView(mTabHost.getContext(), tag);
 
-		TabSpec setContent = mTabHost.newTabSpec(tag).setIndicator(tabview).setContent(new TabContentFactory() {
+		TabSpec setContent = mTabHost.newTabSpec(tag).setIndicator(tabview);
+		setContent.setContent(new TabContentFactory() {
 			public View createTabContent(String tag) {return view;}
 		});
 		mTabHost.addTab(setContent);
+
 
 	}
 
@@ -58,4 +60,6 @@ public class HomeActivity extends Activity {
 		tv.setText(text);
 		return view;
 	}
+	
+	
 }
