@@ -1,3 +1,4 @@
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,43 +9,46 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".UsersActivity" >
 
-    <EditText
-        android:id="@+id/edit_profile"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="87dp"
-        android:ems="10" >
+   
 
-        <requestFocus />
-    </EditText>
+        <EditText
+            android:id="@+id/edit_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="87dp"
+            android:ems="10" >
 
-    <Button
-        android:id="@+id/save"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/logout"
-        android:layout_below="@+id/edit_profile"
-        android:layout_marginTop="21dp"
-        android:text="Save" />
+            <requestFocus />
+        </EditText>
 
-    <Button
-        android:id="@+id/logout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/edit_profile"
-        android:layout_below="@+id/save"
-        android:layout_marginTop="20dp"
-        android:text="Log Out" />
+        <Button
+            android:id="@+id/save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/logout"
+            android:layout_below="@+id/edit_profile"
+            android:layout_marginTop="21dp"
+            android:text="Save" />
 
-    <TextView
-        android:id="@+id/change"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/edit_profile"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="59dp"
-        android:text="Change nickname" />
- 
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/edit_profile"
+            android:layout_below="@+id/save"
+            android:layout_marginTop="20dp"
+            android:text="Log Out" />
+
+        <TextView
+            android:id="@+id/change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/edit_profile"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="59dp"
+            android:text="Change nickname" />
+   
+
 </RelativeLayout>

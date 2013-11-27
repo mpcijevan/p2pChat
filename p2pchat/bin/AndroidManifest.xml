@@ -34,6 +34,14 @@
             android:name="com.mpci.p2pchat.HomeActivity"
             android:label="@string/title_activity_main" >
         </activity>
+        <activity
+            android:name="com.mpci.p2pchat.ChatRoomActivity"
+            android:label="@string/title_activity_chat_room" >
+        </activity>
+        <activity
+            android:name="com.mpci.p2pchat.FriendsActivity"
+            android:label="@string/title_activity_friends" >
+        </activity>
     </application>
 
 </manifest>
