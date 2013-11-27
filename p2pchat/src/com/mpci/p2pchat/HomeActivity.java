@@ -29,7 +29,7 @@ public class HomeActivity extends TabActivity {
 		TabHost tabHost = (TabHost) findViewById(android.R.id.tabhost);
 =======
 		setupTabHost();
-		mTabHost.getTabWidget().setDividerDrawable(R.drawable.tab_devider);
+		mTabHost.getTabWidget();
 
 		setupTab(new TextView(this), getResources().getString(R.string.tab_online));
 		setupTab(new TextView(this), getResources().getString(R.string.tab_friends));
@@ -46,6 +46,7 @@ public class HomeActivity extends TabActivity {
 		tab1.setIndicator("Users");
 		tab1.setContent(new Intent(this, UsersActivity.class));
 
+<<<<<<< HEAD
 		tab2.setIndicator("Friends");
 		tab2.setContent(new Intent(this, FriendsActivity.class));
 
@@ -56,6 +57,22 @@ public class HomeActivity extends TabActivity {
 		tabHost.addTab(tab1);
 		tabHost.addTab(tab2);
 		tabHost.addTab(tab3);
+=======
+		TabSpec setContent = mTabHost.newTabSpec(tag).setIndicator(tabview);
+		setContent.setContent(new TabContentFactory() {
+			public View createTabContent(String tag) {return view;}
+		});
+		mTabHost.addTab(setContent);
+
 
 	}
+>>>>>>> b01e43fe1259d385b4ffbf4d89bd65c3417487e2
+
+	}
+<<<<<<< HEAD
 }
+=======
+	
+	
+}
+>>>>>>> b01e43fe1259d385b4ffbf4d89bd65c3417487e2
