@@ -24,8 +24,19 @@ public class HomeActivity extends TabActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_home);
 
+<<<<<<< HEAD
 	
 		TabHost tabHost = (TabHost) findViewById(android.R.id.tabhost);
+=======
+		setupTabHost();
+		mTabHost.getTabWidget().setDividerDrawable(R.drawable.tab_devider);
+
+		setupTab(new TextView(this), getResources().getString(R.string.tab_online));
+		setupTab(new TextView(this), getResources().getString(R.string.tab_friends));
+		setupTab(new TextView(this), getResources().getString(R.string.tab_profile));
+		
+	}
+>>>>>>> 12427e3aff254e864580ee23f04dda91b2c1ba62
 
 		TabSpec tab1 = tabHost.newTabSpec("First Tab");
 		TabSpec tab2 = tabHost.newTabSpec("Second Tab");

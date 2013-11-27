@@ -3,10 +3,15 @@
 
     <string name="app_name">P2PChat</string>
     <string name="action_settings">Settings</string>
-    <string name="hello_world">Hello world!</string>
     <string name="title_activity_online_users">OnlineUsersActivity</string>
     <string name="title_activity_main">MainActivity</string>
+<<<<<<< HEAD
     <string name="title_activity_chat_room">ChatRoomActivity</string>
     <string name="title_activity_friends">FriendsActivity</string>
+=======
+    <string name="tab_online">ONLINE</string>
+    <string name="tab_friends">FRIENDS</string>
+    <string name="tab_profile">PROFILE</string>
+>>>>>>> 12427e3aff254e864580ee23f04dda91b2c1ba62
 
 </resources>
