@@ -34,10 +34,10 @@ public class HomeActivity extends Activity {
 
 		setupTabHost();
 		mTabHost.getTabWidget().setDividerDrawable(R.drawable.tab_devider);
-		
-		setupTab(new TextView(this), "Online");
-		setupTab(new TextView(this), "My friends");
-		setupTab(new TextView(this), "Profile");
+
+		setupTab(new TextView(this), getResources().getString(R.string.tab_online));
+		setupTab(new TextView(this), getResources().getString(R.string.tab_friends));
+		setupTab(new TextView(this), getResources().getString(R.string.tab_profile));
 		
 	}
 
