@@ -788,6 +788,13 @@ containing a value of this type.
         /**  Minimum width of the search view text entry area. 
          */
         public static final int abs__search_view_text_min_width=0x7f07000b;
+        /** 
+         Customize dimensions originally defined in res/values/dimens.xml (such as
+         screen margins) for sw720dp devices (e.g. 10" tablets) in landscape here.
+    
+         */
+        public static final int activity_horizontal_margin=0x7f070012;
+        public static final int activity_vertical_margin=0x7f070013;
         public static final int padding_large=0x7f070011;
         public static final int padding_medium=0x7f070010;
         public static final int padding_small=0x7f07000f;
@@ -948,25 +955,28 @@ containing a value of this type.
         public static final int abs__textButton=0x7f040013;
         public static final int abs__title=0x7f04001b;
         public static final int abs__up=0x7f04000b;
+        public static final int action_settings=0x7f04003e;
         public static final int disableHome=0x7f040009;
-        public static final int edit_nickname=0x7f040033;
-        public static final int edit_profile=0x7f040037;
+        public static final int edit_message=0x7f040034;
+        public static final int edit_nickname=0x7f040035;
+        public static final int edit_profile=0x7f040039;
         public static final int edit_query=0x7f040026;
         public static final int homeAsUp=0x7f040006;
-        public static final int list=0x7f040036;
+        public static final int list=0x7f040038;
         public static final int listMode=0x7f040002;
-        public static final int log_out=0x7f04003a;
-        public static final int login=0x7f040035;
+        public static final int log_out=0x7f04003c;
+        public static final int login=0x7f040037;
         public static final int mainLayout=0x7f040032;
-        public static final int menu_settings=0x7f04003b;
+        public static final int menu_settings=0x7f04003d;
         public static final int normal=0x7f040001;
-        public static final int save=0x7f040039;
+        public static final int save=0x7f04003b;
+        public static final int send=0x7f040033;
         public static final int showCustom=0x7f040008;
         public static final int showHome=0x7f040005;
         public static final int showTitle=0x7f040007;
         public static final int tabMode=0x7f040003;
-        public static final int text=0x7f040034;
-        public static final int text_nick=0x7f040038;
+        public static final int text=0x7f040036;
+        public static final int text_nick=0x7f04003a;
         public static final int useLogo=0x7f040004;
         public static final int wrap_content=0x7f040000;
     }
@@ -996,14 +1006,16 @@ containing a value of this type.
         public static final int abs__search_view=0x7f030013;
         public static final int abs__simple_dropdown_hint=0x7f030014;
         public static final int activity_action_bar_main=0x7f030015;
-        public static final int activity_main=0x7f030016;
-        public static final int listview=0x7f030017;
-        public static final int sherlock_spinner_dropdown_item=0x7f030018;
-        public static final int sherlock_spinner_item=0x7f030019;
-        public static final int user_profile=0x7f03001a;
+        public static final int activity_chat_room=0x7f030016;
+        public static final int activity_main=0x7f030017;
+        public static final int listview=0x7f030018;
+        public static final int sherlock_spinner_dropdown_item=0x7f030019;
+        public static final int sherlock_spinner_item=0x7f03001a;
+        public static final int user_profile=0x7f03001b;
     }
     public static final class menu {
         public static final int activity_action_bar_main=0x7f0b0000;
+        public static final int main=0x7f0b0001;
     }
     public static final class string {
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
@@ -1045,13 +1057,37 @@ containing a value of this type.
         /**  Description of a share target (both in the list of such or the default share button) in a ShareActionProvider (share UI). [CHAR LIMIT=NONE] 
          */
         public static final int abs__shareactionprovider_share_with_application=0x7f090007;
+        public static final int action_settings=0x7f09000e;
         public static final int app_name=0x7f09000d;
-        public static final int hello_world=0x7f09000e;
-        public static final int menu_settings=0x7f09000f;
-        public static final int title_activity_action_bar_main=0x7f090010;
+        public static final int hello_world=0x7f09000f;
     }
     public static final class style {
-        public static final int AppTheme=0x7f0a0059;
+        /** 
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    
+
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        
+
+        Base application theme for API 11+. This theme completely replaces
+        AppBaseTheme from res/values/styles.xml on API 11+ devices.
+    
+ API 11 theme customizations can go here. 
+
+        Base application theme for API 14+. This theme completely replaces
+        AppBaseTheme from BOTH res/values/styles.xml and
+        res/values-v11/styles.xml on API 14+ devices.
+    
+ API 14 theme customizations can go here. 
+         */
+        public static final int AppBaseTheme=0x7f0a0059;
+        /**  Application theme. 
+ All customizations that are NOT specific to a particular API-level can go here. 
+         */
+        public static final int AppTheme=0x7f0a005a;
         public static final int Sherlock___TextAppearance_Small=0x7f0a0046;
         public static final int Sherlock___Theme=0x7f0a0051;
         public static final int Sherlock___Theme_DarkActionBar=0x7f0a0053;
