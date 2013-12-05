@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.exam.chat"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="22" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.exam.chat.LoginActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.exam.chat.MainActivity"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name="com.exam.chat.OnlineFriends"
+            android:label="@string/title_activity_online_friends" >
+        </activity>
+        <activity
+            android:name="com.exam.chat.OnlineUsers"
+            android:label="@string/title_activity_online_users" >
+        </activity>
+        <activity
+            android:name="com.exam.chat.UserProfile"
+            android:label="@string/title_activity_user_profile" >
+        </activity>
+    </application>
+
+</manifest>
